@@ -1,2 +1,58 @@
 The below process needs to be followed when importing the provided SharePoint Lists. This is to ensure the correct auto columns are set up correctly to validate the application.
 
+When importing the list, please follow the below import settings and adjustments:
+
+Documents List:
+Import columns as:
+	Name	| Name
+	Status	| Single line of text >> Default value: Inactive
+
+KPI List:
+Import columns as:
+	Title	| Title
+
+Setup List:
+Import columns as:
+	Title	| Title
+	Detail	| Single line of text
+
+Theme List:
+Import columns as:
+	Title	| Title
+	Red	| Single line of text
+  Green	| Single line of text
+  Blue	| Single line of text
+  Alpha	| Single line of text
+  Hex	| Single line of text
+
+Grade List:
+Import columns as:
+	Title			| Title
+	User			| Single line of text
+  StaffGrade		| Number >> Default value: 0
+  ManagerGrade		| Number >> Default value: 0
+  StaffComment		| Single line of text
+  ManagersComment	| Single line of text
+  Year			| Calculated column >> =TEXT(Created,"yyyy")
+  Count			| Number >> Default value: 1
+
+Staff List:
+Import columns as:
+	Title		| Title
+	Display_Name	| Single line of text
+	Initials		| Single line of text
+	First_Name	| Single line of text
+	Last_Name	| Single line of text
+	Job_Grade	| Single line of text
+	Job_Title	| Single line of text
+	Gender		| Choice [Male, Female]
+	Manager	| Single line of text
+
+Users List:
+Import columns as:
+	Title		| Title
+	Password	| Single line of text
+	Email		| Single line of text
+	Profile		| Choice [Admin, Manager, Staff]
+
+
