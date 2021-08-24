@@ -1,0 +1,21 @@
+You can either try importing the provided flow template or create a new flow as per the instructions below.
+Ensure the flow is named: KPI Logo Upload.
+
+First, create a new instant flow using the PowerApps trigger
+In the editor, add a new step and select the "SharePoint Create file"
+  Choose your SharePoint Site and slect your Folder Path to be 'Shared Documents"
+  In File Name, go the Add Dynamic Content and scroll down to PowerApps. Either select Createfile_FileName or click "Ask in PowerApps".
+  Repeat the above step in the File Content field to and confirm there is a Createfile_FileContent.
+    Now, remove the PowerApps Createfile_FileContent from the field and add a Dynamic Content and select Expression.
+    Type in the following line and add: base64ToBinary(triggerBody()['Createfile_FileContent'])
+  Next, create a new step called from the Respond to a PowerApp or Flow.
+    Add an output as Text.
+      Title: kpiuploadlogo
+  Lastly, add the final setp from the SharePoint, Update file properties.
+      Set the site address to your KPI site and the library to Documents.
+        Set ID to ItemID from the Dynamic SharePoint content and type "Active" in the Status field
+        
+Be sure to save the flow and turn it on.
+      
+
+
