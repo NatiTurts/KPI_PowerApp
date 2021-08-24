@@ -1,0 +1,13 @@
+After importing the app, the following connections need to be created.
+
+Office 365 Outlook
+  SharePoint List [Your Site] Documents
+  SharePoint List [Your Site] KPI
+  SharePoint List [Your Site] Setup
+  SharePoint List [Your Site] Theme
+  SharePoint List [Your Site] Grades
+  SharePoint List [Your Site] Staff
+  SharePoint List [Your Site] Users
+  Apply Action to Button >> Select KPI Logo Upload (your flow should be created as per the name provided)
+
+Once successful, the app will be ready for use.
