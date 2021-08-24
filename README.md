@@ -24,4 +24,6 @@ Once you have imported the App into PowerApps, you will need to connect to the f
   
 After setting up these Connections, be sure to refresh them all and check that there are no warnings in the App. It should be ready for publishing.
 
+Shout-out to R3dKap (Emmanuel GALLIS) for the amazing Ultimate Colour Picker PowerApps component used in this app.
+
 Enjoy
